@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Haven | Cart</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div>Free shipping on orders over $50!</div>
+        <div>Call us: (123) 456-7890</div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">Book<span>Haven</span></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+          </div>
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart Content -->
+  <div class="container page-content">
+    <h1>Your Shopping Cart</h1>
+    
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="cart-item">
+              <img src="https://m.media-amazon.com/images/I/81vO9qF0jBL._AC_UF1000,1000_QL80_.jpg" alt="The Midnight Library">
+              <div>
+                <h4>The Midnight Library</h4>
+                <p>by Matt Haig</p>
+              </div>
+            </div>
+          </td>
+          <td>$14.99</td>
+          <td>
+            <input type="number" value="1" min="1" class="quantity-input">
+          </td>
+          <td>$14.99</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-item">
+              <img src="https://m.media-amazon.com/images/I/91nTClkODRL._AC_UF1000,1000_QL80_.jpg" alt="Project Hail Mary">
+              <div>
+                <h4>Project Hail Mary</h4>
+                <p>by Andy Weir</p>
+              </div>
+            </div>
+          </td>
+          <td>$16.99</td>
+          <td>
+            <input type="number" value="1" min="1" class="quantity-input">
+          </td>
+          <td>$16.99</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span>$31.98</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span>Free</span>
+      </div>
+      <div class="summary-row summary-total">
+        <span>Total</span>
+        <span>$31.98</span>
+      </div>
+      <a href="#" class="btn" style="width: 100%; margin-top: 20px;">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Book Haven</h3>
+          <p>Your premier destination for books of all genres.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Fiction</a></li>
+            <li><a href="#">Non-Fiction</a></li>
+            <li><a href="#">Children's</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+            <li><i class="fas fa-envelope"></i> info@bookhaven.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Book Haven. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
